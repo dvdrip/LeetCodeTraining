@@ -1,4 +1,4 @@
-﻿namespace LeetCodeTraining
+﻿namespace LeetCodeTest
 {
     partial class FormMain
     {
@@ -29,35 +29,34 @@
         private void InitializeComponent()
         {
             btnTestArray = new Button();
-            txtArray = new TextBox();
+            textArray = new TextBox();
             SuspendLayout();
             // 
             // btnTestArray
             // 
-            btnTestArray.Location = new Point(114, 82);
+            btnTestArray.Location = new Point(72, 115);
             btnTestArray.Name = "btnTestArray";
-            btnTestArray.Size = new Size(100, 23);
+            btnTestArray.Size = new Size(274, 23);
             btnTestArray.TabIndex = 0;
             btnTestArray.Text = "Test Array";
             btnTestArray.UseVisualStyleBackColor = true;
-            //btnTestArray.Click += this.btnTestArray_Click;
+            btnTestArray.Click += button1_Click;
             // 
-            // txtArray
+            // textArray
             // 
-            txtArray.Location = new Point(114, 53);
-            txtArray.Name = "txtArray";
-            txtArray.Size = new Size(100, 23);
-            txtArray.TabIndex = 1;
+            textArray.Location = new Point(72, 86);
+            textArray.Name = "textArray";
+            textArray.Size = new Size(274, 23);
+            textArray.TabIndex = 1;
             // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(328, 158);
-            Controls.Add(txtArray);
+            ClientSize = new Size(418, 225);
+            Controls.Add(textArray);
             Controls.Add(btnTestArray);
             Name = "FormMain";
-            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
@@ -66,6 +65,6 @@
         #endregion
 
         private Button btnTestArray;
-        private TextBox txtArray;
+        private TextBox textArray;
     }
 }
