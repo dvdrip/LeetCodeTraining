@@ -11,41 +11,51 @@ namespace Roman_to_Integer
     {
         public int RomanToInt(string s)
         {
-            int myVal = 0;
+            Dictionary<char, int> romanValues = new Dictionary<char, int>
+        {
+            {'I', 1},
+            {'V', 5},
+            {'X', 10},
+            {'L', 50},
+            {'C', 100},
+            {'D', 500},
+            {'M', 1000}
+        };
 
-            char[] myCharArray = s.ToCharArray();
+            int result = 0;
 
             for (int i = 0; i < s.Length; i++)
             {
-                romanNumerals().TryGetValue(s[i], out int myNum);
+                bool isLastSymbol = i == s.Length - 1;
+                bool shouldSubtract = !isLastSymbol && romanValues[s[i]] < romanValues[s[i + 1]];
 
-                if (i < s.Length - 1 && myNum < myNum + 1)
+                if (shouldSubtract)
                 {
-                    myVal = myVal - myNum;
+                    result -= romanValues[s[i]];
                 }
                 else
                 {
-                    myVal = myVal + myNum;
+                    result += romanValues[s[i]];
                 }
             }
 
-            return myVal;
+            return result;
         }
 
-        public Dictionary<char, int> romanNumerals()
-        {
-            Dictionary<char, int> myDict = new Dictionary<char, int>
-            {
-                {'I', 1},
-                {'V', 5},
-                {'X', 10},
-                {'L', 50},
-                {'C', 100},
-                {'D', 500},
-                {'M', 1000}
-            };
+        //public Dictionary<char, int> romanNumerals()
+        //{
+        //    Dictionary<char, int> myDict = new Dictionary<char, int>
+        //    {
+        //        {'I', 1},
+        //        {'V', 5},
+        //        {'X', 10},
+        //        {'L', 50},
+        //        {'C', 100},
+        //        {'D', 500},
+        //        {'M', 1000}
+        //    };
 
-            return myDict;
-        }
+        //    return myDict;
+        //}
     }
 }
