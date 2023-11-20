@@ -8,24 +8,24 @@ namespace LinkedListTest
 {
     public class Party
     {
-        public Adventurer Leader;
+        public Adventurer member;
 
         public Party()
         {
-            Leader = null;
+            member = null;
         }
 
         public void AddAdventurer(string name, int level)
         {
             Adventurer adventurer = new Adventurer(name, level);
 
-            if (Leader == null)
+            if (member == null)
             {
-                Leader = adventurer;
+                member = adventurer;
             }
             else
             {
-                Adventurer current = Leader;
+                Adventurer current = member;
 
                 while (current.Next != null)
                 {
@@ -37,7 +37,7 @@ namespace LinkedListTest
 
         public void DisplayParty()
         {
-            Adventurer current = Leader;
+            Adventurer current = member;
             while (current != null)
             {
                 Console.WriteLine($"{current.Name} (Level {current.Level})");

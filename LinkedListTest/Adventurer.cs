@@ -16,7 +16,7 @@ namespace LinkedListTest
         {
             Name = name;
             Level = level;
-            Next = null;
+            //Next = null;
         }
     }
 }
