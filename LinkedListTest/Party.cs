@@ -17,7 +17,35 @@ namespace LinkedListTest
 
         public void AddAdventurer(string name, int level)
         {
-            Adventurer newAdventurer = new Adventurer(name, level);
+            Adventurer adventurer = new Adventurer(name, level);
+
+            if (Leader == null)
+            {
+                Leader = adventurer;
+            }
+            else
+            {
+                Adventurer current = Leader;
+
+                while (current.Next != null)
+                {
+                    current = current.Next;
+                }
+                current.Next = adventurer;
+            }
+        }
+
+        public void DisplayParty()
+        {
+            Adventurer current = Leader;
+            while (current.Next != null)
+            {
+                Console.WriteLine($"{current.Name} (Level {current.Level})");
+
+                current = current.Next;
+            }
+
+            Console.WriteLine($"{current.Name} (Level {current.Level})");
         }
     }
 }
