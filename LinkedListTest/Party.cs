@@ -38,14 +38,12 @@ namespace LinkedListTest
         public void DisplayParty()
         {
             Adventurer current = Leader;
-            while (current.Next != null)
+            while (current != null)
             {
                 Console.WriteLine($"{current.Name} (Level {current.Level})");
 
                 current = current.Next;
             }
-
-            Console.WriteLine($"{current.Name} (Level {current.Level})");
         }
     }
 }
