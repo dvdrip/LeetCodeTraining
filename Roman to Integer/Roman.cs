@@ -15,11 +15,18 @@ namespace Roman_to_Integer
 
             char[] myCharArray = s.ToCharArray();
 
-            for (int i = 0; i < myCharArray.Length; i++)
+            for (int i = 0; i < s.Length; i++)
             {
-                romanNumerals().TryGetValue(myCharArray[i], out int value);
+                romanNumerals().TryGetValue(s[i], out int myNum);
 
-                myVal = myVal + value;
+                if (i < s.Length - 1 && myNum < myNum + 1)
+                {
+                    myVal = myVal - myNum;
+                }
+                else
+                {
+                    myVal = myVal + myNum;
+                }
             }
 
             return myVal;
