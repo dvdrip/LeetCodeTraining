@@ -10,7 +10,7 @@ namespace Longest_Common_Prefix
     {
         static void Main(string[] args)
         {
-            string[] myStrings = { "flow", "flight", "fly", "flower"};
+            string[] myStrings = { "flow", "floght", "flo", "flower", "flought"};
 
             Solution solution = new Solution();
 

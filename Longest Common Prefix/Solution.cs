@@ -55,7 +55,6 @@ namespace Longest_Common_Prefix
             for (int i = 0; i <= shortestLength; i++)
             {
                 char current = strs[0][i];
-                Console.WriteLine($"current {current}");
 
                 if (strs.Any(x => x[i] != current))
                 {
@@ -63,12 +62,11 @@ namespace Longest_Common_Prefix
 
                     return strs[0].Substring(0, i);
                 }
-
             }
 
             Console.WriteLine(shortestLength);
 
-            return null;
+            return strs[0].Substring(0,shortestLength);
         }
 
     }
