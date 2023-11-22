@@ -32,5 +32,44 @@ namespace Longest_Common_Prefix
             return strs[0].Substring(0, shortestLength);
         }
 
+        public string TryAgain(string[] strs)
+        {
+            string myString = "";
+
+            foreach (string str in strs)
+            {
+                for (int i = 0; i < str.Length; i++)
+                {
+                    Console.WriteLine(str[i]);
+                }
+                Console.WriteLine();
+            }
+
+            return myString;
+        }
+
+        public string TryAnother(string[] strs)
+        {
+            int shortestLength = strs.Min(s => s.Length);
+
+            for (int i = 0; i <= shortestLength; i++)
+            {
+                char current = strs[0][i];
+                Console.WriteLine($"current {current}");
+
+                if (strs.Any(x => x[i] != current))
+                {
+                    Console.WriteLine(strs[0].Substring(0,i));
+
+                    return strs[0].Substring(0, i);
+                }
+
+            }
+
+            Console.WriteLine(shortestLength);
+
+            return null;
+        }
+
     }
 }

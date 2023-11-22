@@ -10,11 +10,11 @@ namespace Longest_Common_Prefix
     {
         static void Main(string[] args)
         {
-            string[] myStrings = { "flow", "flight", "fly", "flower" };
+            string[] myStrings = { "flow", "flight", "fly", "flower"};
 
             Solution solution = new Solution();
 
-            solution.LongestCommonPrefix(myStrings);
+            solution.TryAnother(myStrings);
 
             Console.ReadLine();
         }
