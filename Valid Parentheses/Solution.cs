@@ -10,27 +10,33 @@ namespace Valid_Parentheses
     {
         public bool IsValid(string s)
         {
-            if (s == null) return false;
+            Stack<char> stack = new Stack<char>();
 
-            char startChar = s[0];
-            char endChar = s[s.Length - 1];
+            foreach (char c in s)
+            {
+                if (c == '(' || c == '{' || c == '[')
+                {
+                    stack.Push(c);
+                }
+                else
+                {
+                    if (stack.Count == 0)
+                    {
+                        return false; // No corresponding open bracket
+                    }
 
-            if (startChar == '(' && endChar == ')')
-            {
-                return true;
+                    char openBracket = stack.Pop();
+
+                    if ((c == ')' && openBracket != '(') ||
+                        (c == '}' && openBracket != '{') ||
+                        (c == ']' && openBracket != '['))
+                    {
+                        return false; // Mismatched brackets
+                    }
+                }
             }
-            else if (startChar == '{' && endChar == '}')
-            {
-                return true;
-            }
-            else if (startChar == '[' && endChar == ']')
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+
+            return stack.Count == 0; // Check if all open brackets are closed
         }
 
         static char GetOppositeChar(char inputChar)

@@ -10,15 +10,19 @@ namespace Valid_Parentheses
     {
         static void Main(string[] args)
         {
-            string s = Console.ReadLine();
+            string myExit = Console.ReadLine();
 
-            Solution solution = new Solution();
-            
-            bool validity = solution.IsValid(s);
+            while (myExit != "out")
+            {
 
-            Console.WriteLine(validity);
+                Solution solution = new Solution();
 
-            Console.ReadLine();
+                bool validity = solution.IsValid(myExit);
+
+                Console.WriteLine(validity);
+
+                myExit = Console.ReadLine();
+            }
         }
     }
 }
