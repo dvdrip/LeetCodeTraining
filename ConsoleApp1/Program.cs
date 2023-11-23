@@ -10,15 +10,25 @@ namespace ConsoleApp1
     {
         public static void Main(string[] args)
         {
-            writeStuffFirst();
-            writeStuffSecond();
+            //writeStuffFirst();
+            //writeStuffSecond();
 
-            Class1 class1 = new Class1();
-            var a = class1.sumNum(1, 2);
+            //Class1 class1 = new Class1();
+            //var a = class1.sumNum(1, 2);
 
-            Console.WriteLine(a);
+            //Console.WriteLine(a);
 
-            Console.ReadLine();
+            //Console.ReadLine();
+
+            var myExit = Console.ReadLine();
+
+            while (myExit != "")
+            {
+                StackTest stackTest = new StackTest();
+                Console.WriteLine(stackTest.Stacker(myExit));
+
+                myExit = Console.ReadLine();
+            }
         }
 
         private static void writeStuffFirst()

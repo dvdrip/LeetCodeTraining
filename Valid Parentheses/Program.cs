@@ -14,7 +14,6 @@ namespace Valid_Parentheses
 
             while (myExit != "out")
             {
-
                 Solution solution = new Solution();
 
                 bool validity = solution.IsValid(myExit);
