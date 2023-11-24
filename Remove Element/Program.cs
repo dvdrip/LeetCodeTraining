@@ -10,12 +10,12 @@ namespace Remove_Element
     {
         static void Main(string[] args)
         {
-            int[] nums = { 3, 2, 2, 3 };
-            int val = 3;
+            int[] nums = { 0, 1, 2, 2, 3, 0, 4, 2 };
+            int val = 2;
 
             Solution solution = new Solution();
             var x = solution.RemoveElement(nums, val);
-            Console.WriteLine("My out " + x);
+            Console.WriteLine("Elements left " + x);
             Console.ReadLine();
         }
     }

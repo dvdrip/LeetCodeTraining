@@ -12,25 +12,40 @@ namespace Remove_Element
         {
             List<int> list = new List<int>();
 
+            Console.WriteLine($"The array with val: {val}");
 
+            Console.Write("{");
 
             foreach (int i in nums)
             {
+                Console.Write(i);
+
                 if (i != val)
                 {
                     list.Add(i);
                 }
             }
 
+            Console.Write("}");
+
+            Console.WriteLine("");
+
+            Console.WriteLine("Converting list to array...");
+
             int[] myIntArray = list.ToArray();
 
-            for (int i = 0; i < myIntArray.Length; int++)
+            Console.Write("{");
+
+            for (int i = 0; i < myIntArray.Length; i++)
             {
-                Console.WriteLine(myIntArray[i]);
+                Console.Write(myIntArray[i]);
             }
 
+            Console.Write("}");
+
+            Console.WriteLine();
+
             return myIntArray.Length;
-            
         }
     }
 }
