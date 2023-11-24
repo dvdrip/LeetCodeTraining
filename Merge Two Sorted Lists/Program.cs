@@ -10,20 +10,20 @@ namespace Merge_Two_Sorted_Lists
     {
         static void Main(string[] args)
         {
-            //ListNode list1 = new ListNode();
-            //list1.val = 1;
-            //list1.val = 2;
-            //list1.val = 4;
+            string myOut = Console.ReadLine();
 
-            //ListNode list2 = new ListNode(1, new ListNode(3, new ListNode(4)));
+            ListNode list1 = new ListNode(1, new ListNode(2, new ListNode(4)));
+            ListNode list2 = new ListNode(1, new ListNode(3, new ListNode(4)));
 
-            //Solution solution = new Solution();
-            //solution.MergeTwoLists(list1, list2);
+            
 
-            Solution solution = new Solution();
-            solution.TestLinkedList();
+            while (myOut != "")
+            {
+                Solution solution = new Solution();
+                ListNode mergedList = solution.MergeTwoLists(list1, list2);
 
-            Console.ReadLine();
+                myOut = Console.ReadLine();
+            }
         }
     }
 }
