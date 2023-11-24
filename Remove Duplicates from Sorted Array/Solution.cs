@@ -18,6 +18,13 @@ namespace Remove_Duplicates_from_Sorted_Array
             // Convert the List<int> back to an array
             int[] uniqueArray = uniqueList.ToArray();
 
+            Console.WriteLine("Array: ");
+
+            foreach (int i in uniqueArray)
+            {
+                Console.WriteLine(i);
+            }
+
             return uniqueArray.Length;
         }
     }

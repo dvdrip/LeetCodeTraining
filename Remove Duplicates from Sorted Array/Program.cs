@@ -10,11 +10,11 @@ namespace Remove_Duplicates_from_Sorted_Array
     {
         static void Main(string[] args)
         {
-            int[] nums = { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
+            int[] nums = { 1, 1, 2 };
 
             Solution solution = new Solution();
             int k = solution.RemoveDuplicates(nums);
-            Console.WriteLine(k);
+            Console.WriteLine($"Count left: {k}");
 
             Console.ReadLine();
         }
