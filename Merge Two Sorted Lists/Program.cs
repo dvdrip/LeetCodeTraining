@@ -15,8 +15,6 @@ namespace Merge_Two_Sorted_Lists
             ListNode list1 = new ListNode(1, new ListNode(2, new ListNode(4)));
             ListNode list2 = new ListNode(1, new ListNode(3, new ListNode(4)));
 
-            
-
             while (myOut != "")
             {
                 Solution solution = new Solution();

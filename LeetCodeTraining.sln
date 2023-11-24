@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Longest Common Prefix", "Lo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valid Parentheses", "Valid Parentheses\Valid Parentheses.csproj", "{10FCA3E3-C49B-415D-A84E-348844D3E613}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Remove Duplicates from Sorted Array", "Remove Duplicates from Sorted Array\Remove Duplicates from Sorted Array.csproj", "{6D1110B7-B74F-4FC8-9D5B-0CA887968495}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{10FCA3E3-C49B-415D-A84E-348844D3E613}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10FCA3E3-C49B-415D-A84E-348844D3E613}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10FCA3E3-C49B-415D-A84E-348844D3E613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D1110B7-B74F-4FC8-9D5B-0CA887968495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D1110B7-B74F-4FC8-9D5B-0CA887968495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D1110B7-B74F-4FC8-9D5B-0CA887968495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D1110B7-B74F-4FC8-9D5B-0CA887968495}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

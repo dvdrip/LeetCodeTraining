@@ -24,5 +24,16 @@ namespace ConsoleApp1
 
             return false;
         }
+
+        public LinkedList<Suikoden> TryLinked(Suikoden[] myCharacter)
+        {
+            LinkedList<Suikoden> stack = new LinkedList<Suikoden>();
+            for (int i = 0; i < myCharacter.Count(); i++)
+            {
+                stack.AddLast(myCharacter[i]);
+            }
+
+            return stack;
+        }
     }
 }
