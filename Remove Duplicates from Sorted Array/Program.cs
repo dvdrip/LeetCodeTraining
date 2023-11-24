@@ -13,7 +13,8 @@ namespace Remove_Duplicates_from_Sorted_Array
             int[] nums = { 1, 1, 2 };
 
             Solution solution = new Solution();
-            solution.RemoveDuplicates(nums);
+            int k = solution.RemoveDuplicates(nums);
+            Console.WriteLine($"Count left: {k}");
 
             Console.ReadLine();
         }

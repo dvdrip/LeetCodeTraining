@@ -10,19 +10,22 @@ namespace Remove_Duplicates_from_Sorted_Array
     {
         public int RemoveDuplicates(int[] nums)
         {
-            int k = 0;
+            List<int> numberList = new List<int>(nums);
 
-            if (nums != null)
+            // Remove duplicates using Distinct
+            List<int> uniqueList = numberList.Distinct().ToList();
+
+            // Convert the List<int> back to an array
+            int[] uniqueArray = uniqueList.ToArray();
+
+            Console.WriteLine("Array: ");
+
+            foreach (int i in uniqueArray)
             {
-                for (int i = 0; i < nums.Length; i++)
-                {
-                    LinkedList<int> list = new LinkedList<int>();
-
-                    Console.WriteLine(nums[i]);
-                }
+                Console.WriteLine(i);
             }
 
-            return k;
+            return uniqueArray.Length;
         }
     }
 }
