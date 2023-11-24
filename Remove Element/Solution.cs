@@ -12,37 +12,15 @@ namespace Remove_Element
         {
             List<int> list = new List<int>();
 
-            Console.WriteLine($"The array with val: {val}");
-
-            Console.Write("{");
-
             for (int i = 0; i < nums.Length; i++)
             {
-                Console.Write(i);
                 if (nums[i] != val)
                 {
                     list.Add(i);
                 }
             }
 
-            Console.Write("}");
-
-            Console.WriteLine("");
-
-            Console.WriteLine("Converting list to array...");
-
             int[] myIntArray = list.ToArray();
-
-            Console.Write("{");
-
-            for (int i = 0; i < myIntArray.Length; i++)
-            {
-                Console.Write(myIntArray[i]);
-            }
-
-            Console.Write("}");
-
-            Console.WriteLine();
 
             int[] myReturnArray = new int[nums.Length];
 
@@ -85,11 +63,29 @@ namespace Remove_Element
             for (int i = 0; i < expectedNums.Length; i++)
             {
                 Console.Write(expectedNums[i]);
-                
+
             }
             Console.WriteLine();
 
             return k;
         }
+
+        public int GetAnswer(int[] nums, int val)
+        {
+            int index = 0; // Use this index to overwrite the array in-place
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] != val)
+                {
+                    nums[index] = nums[i]; // Overwrite the array in-place
+                    index++;
+                }
+            }
+
+            // index now represents the length of the modified array
+            return index;
+        }
     }
+}
 }
