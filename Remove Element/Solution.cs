@@ -16,11 +16,10 @@ namespace Remove_Element
 
             Console.Write("{");
 
-            foreach (int i in nums)
+            for (int i = 0; i < nums.Length; i++)
             {
                 Console.Write(i);
-
-                if (i != val)
+                if (nums[i] != val)
                 {
                     list.Add(i);
                 }
@@ -45,7 +44,52 @@ namespace Remove_Element
 
             Console.WriteLine();
 
+            int[] myReturnArray = new int[nums.Length];
+
+            for (int i = 0; i < myIntArray.Length; i++)
+            {
+                myReturnArray[i] = list[i];
+            }
+
             return myIntArray.Length;
+        }
+
+        public int RemoveElement2(int[] nums, int val)
+        {
+            int k = 0;
+            int[] expectedNums = nums;
+
+            Console.WriteLine($"The array with val: {val}");
+
+            Console.Write("{");
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                Console.Write(nums[i]);
+
+                if (nums[i] != val)
+                {
+                    expectedNums[i] = nums[i];
+                    k++;
+                }
+                else
+                {
+                    expectedNums[i] = 9;
+                }
+            }
+
+            Console.Write("}");
+
+            Console.WriteLine();
+
+            for (int i = 0; i < expectedNums.Length; i++)
+            {
+                Console.Write(expectedNums[i]);
+                
+            }
+            Console.WriteLine();
+
+            return k;
         }
     }
 }
