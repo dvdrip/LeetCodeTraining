@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Merge_Two_Sorted_Lists
 {
-    internal class ListNode
+    public class ListNode
     {
         public int val;
         public ListNode next;

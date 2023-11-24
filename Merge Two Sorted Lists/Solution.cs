@@ -13,38 +13,34 @@ namespace Merge_Two_Sorted_Lists
             ListNode dummy = new ListNode();
             ListNode current = dummy;
 
-            while (current != null)
+            while (list1 != null && list2 != null)
             {
-                // something
+                if (list1.val < list2.val)
+                {
+                    current.next = list1;
+                    list1 = list1.next;
+                }
+                else
+                {
+                    current.next = list2;
+                    list2 = list2.next;
+                }
+
+                current = current.next;
             }
 
-            return dummy;
-        }
-
-        public void TestLinkedList()
-        {
-            LinkedList<int> list = new LinkedList<int>();
-            list.AddFirst(5);
-            list.AddLast(1);
-            list.AddFirst(2);
-            list.AddLast(3);
-            list.AddLast(3);
-            list.AddFirst(3);
-
-            var nodeToRemove = list.Find(3);
-
-            list.Remove(nodeToRemove);
-
-            list.RemoveLast();
-
-            LinkedListNode<int> node = list.Find(3);
-            list.AddAfter(node, 0);
-
-            foreach (int i in list)
+            // If one of the lists is not empty, append the remaining nodes
+            if (list1 != null)
             {
-                Console.WriteLine(i);
+                current.next = list1;
             }
-        }
+            else
+            {
+                current.next = list2;
+            }
 
+            return dummy.next;
+        }
     }
+
 }
