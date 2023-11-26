@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Remove Duplicates from Sort
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Remove Element", "Remove Element\Remove Element.csproj", "{86CC7455-0F5A-4F2C-A268-23A08BAB1FF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Find the Index of the First Occurrence in a String", "Find the Index of the First Occurrence in a String\Find the Index of the First Occurrence in a String.csproj", "{64DF60BA-1271-45B5-909D-B0D8C6242161}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{86CC7455-0F5A-4F2C-A268-23A08BAB1FF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86CC7455-0F5A-4F2C-A268-23A08BAB1FF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86CC7455-0F5A-4F2C-A268-23A08BAB1FF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64DF60BA-1271-45B5-909D-B0D8C6242161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64DF60BA-1271-45B5-909D-B0D8C6242161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64DF60BA-1271-45B5-909D-B0D8C6242161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64DF60BA-1271-45B5-909D-B0D8C6242161}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
