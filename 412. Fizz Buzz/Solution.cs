@@ -12,7 +12,7 @@ namespace _412.Fizz_Buzz
         {
             List<string> stringList = new List<string>();
 
-            for (int i = 1; i < n; i++)
+            for (int i = 1; i < n + 1; i++)
             {
                 switch (i)
                 {
