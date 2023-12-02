@@ -14,5 +14,10 @@ namespace ConsoleApp1
         {
             MyProperty = Convert.ToInt32(myItem);
         }
+
+        public int GetSample()
+        {
+            return MyProperty;
+        }
     }
 }
