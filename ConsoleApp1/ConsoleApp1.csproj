@@ -46,6 +46,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sampler.cs" />
     <Compile Include="StackTest.cs" />
     <Compile Include="Suikoden.cs" />
     <Compile Include="Weapon.cs" />
