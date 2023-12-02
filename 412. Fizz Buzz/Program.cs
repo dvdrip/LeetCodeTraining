@@ -10,11 +10,11 @@ namespace _412.Fizz_Buzz
     {
         static void Main(string[] args)
         {
-            int n = 1;
+            int n = 15;
 
             Solution solution = new Solution();
 
-            foreach (var item in solution.FizzBuzz(n))
+            foreach (var item in solution.FizzBuzz2(n))
             {
                 Console.WriteLine(item);
             }
