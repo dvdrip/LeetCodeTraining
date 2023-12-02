@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Schema;
 
 namespace _7.Reverse_Integer
 {
@@ -14,7 +15,14 @@ namespace _7.Reverse_Integer
 			{
                 string xString = x.ToString();
 
-                string xStringReversed = new string(xString.Reverse().ToArray());
+                char[] xStringToCharArray = xString.Reverse().ToArray();
+
+                var xStringReversed = string.Concat(xStringToCharArray);
+
+                if (xStringReversed.Contains("-"))
+                {
+                    xStringReversed = "-" + xStringReversed.Replace("-", "");
+                }
 
                 int xIntReversed = Convert.ToInt32(xStringReversed);
 
