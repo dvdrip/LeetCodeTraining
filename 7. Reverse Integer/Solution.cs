@@ -12,13 +12,15 @@ namespace _7.Reverse_Integer
         {
 			try
 			{
-                string xString = x.ToString();
+                bool isNegative = x < 0;
+
+                string xString = Convert.ToInt64(x).ToString();
 
                 string xStringReversed = new string(xString.Reverse().ToArray());
 
                 int xIntReversed = Convert.ToInt32(xStringReversed);
 
-                return xIntReversed;
+                return isNegative ? -xIntReversed : xIntReversed;
             }
 			catch (Exception ex)
 			{
