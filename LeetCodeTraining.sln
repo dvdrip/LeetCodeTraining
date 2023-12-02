@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1160. Find Words That Can B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. Reverse Integer", "7. Reverse Integer\7. Reverse Integer.csproj", "{44E7C217-38D8-477B-AC72-C5A5C71F190D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "412. Fizz Buzz", "412. Fizz Buzz\412. Fizz Buzz.csproj", "{9581DD9B-BEB7-4ADD-9BC1-C6800AAEDEBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{44E7C217-38D8-477B-AC72-C5A5C71F190D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44E7C217-38D8-477B-AC72-C5A5C71F190D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44E7C217-38D8-477B-AC72-C5A5C71F190D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9581DD9B-BEB7-4ADD-9BC1-C6800AAEDEBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9581DD9B-BEB7-4ADD-9BC1-C6800AAEDEBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9581DD9B-BEB7-4ADD-9BC1-C6800AAEDEBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9581DD9B-BEB7-4ADD-9BC1-C6800AAEDEBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
