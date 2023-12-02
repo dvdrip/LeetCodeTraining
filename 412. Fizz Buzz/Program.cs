@@ -10,7 +10,7 @@ namespace _412.Fizz_Buzz
     {
         static void Main(string[] args)
         {
-            int n = 6;
+            int n = 1;
 
             Solution solution = new Solution();
 

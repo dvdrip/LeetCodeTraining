@@ -12,10 +12,15 @@ namespace _412.Fizz_Buzz
         {
             List<string> stringList = new List<string>();
 
-            for (int i = 1; i < n + 1; i++)
+            for (int i = 0; i < n + 1; i++)
             {
                 switch (i)
                 {
+                    case 0:
+                        break;
+                    case int num when num % 3 == 0 && num % 5 == 0:
+                        stringList.Add("FizzBuzz");
+                        break;
                     case int num when num % 3 == 0:
                         stringList.Add("Fizz");
                         break;
