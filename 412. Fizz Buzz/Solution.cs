@@ -27,7 +27,7 @@ namespace _412.Fizz_Buzz
                     case int num when num % 5 == 0:
                         stringList.Add("Buzz");
                         break;
-                    case int num when num < n:
+                    case int num when num <= n:
                         stringList.Add(i.ToString());
                         break;
                     default:
