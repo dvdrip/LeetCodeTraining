@@ -12,26 +12,48 @@ namespace _1160.Find_Words_That_Can_Be_Formed_by_Characters
         {
             int count = 0;
 
-            string uniqueLetters = new string(chars.Distinct().ToArray());
-
-            for (int i = 0; i < words.Length; i++)
+            foreach (string word in words)
             {
-                for (int j = 0; j < uniqueLetters.Length; j++)
+                if (CanFormWord(word, chars))
                 {
-                    if (words[i].Contains(chars[j]))
-                    {
-                        count++;
-                    }
-                    else
-                    {
-                        count--;
-                    }
+                    count += word.Length;
                 }
             }
 
             Console.WriteLine(count);
 
             return count;
+        }
+
+        private bool CanFormWord(string word, string chars)
+        {
+            Dictionary<char, int> charCount = new Dictionary<char, int>();
+
+            // Count the occurrences of each character in chars
+            foreach (char c in chars)
+            {
+                if (charCount.ContainsKey(c))
+                {
+                    charCount[c]++;
+                }
+                else
+                {
+                    charCount[c] = 1;
+                }
+            }
+
+            // Check if the characters in word can be formed using chars
+            foreach (char c in word)
+            {
+                if (!charCount.ContainsKey(c) || charCount[c] == 0)
+                {
+                    return false;
+                }
+
+                charCount[c]--;
+            }
+
+            return true;
         }
     }
 }
