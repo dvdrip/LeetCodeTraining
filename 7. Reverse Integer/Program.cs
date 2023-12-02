@@ -10,7 +10,7 @@ namespace _7.Reverse_Integer
     {
         static void Main(string[] args)
         {
-            int x = 123;
+            int x = -123;
 
             Solution solution = new Solution();
 
