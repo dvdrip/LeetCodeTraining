@@ -10,27 +10,13 @@ namespace _1688.Count_of_Matches_in_Tournament
     {
         public int NumberOfMatches(int n)
         {
-            int answer = 0;
-
-            if (n % 2 == 0)
+            int matches = 0;
+            while (n > 1)
             {
-                Console.WriteLine(n);
-                //if even
-                while (n != 1)
-                {
-                    n = n / 2;
-                    Console.WriteLine(n);
-
-                    answer = answer + n;
-                }
+                matches += n / 2;
+                n = (n + 1) / 2; // calculate the number of teams in the next round
             }
-            else
-            {
-                //if odd
-
-            }
-
-            return answer;
+            return matches;
         }
     }
 }
