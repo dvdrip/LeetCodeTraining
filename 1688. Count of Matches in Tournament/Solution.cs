@@ -14,8 +14,15 @@ namespace _1688.Count_of_Matches_in_Tournament
 
             if (n % 2 == 0)
             {
+                Console.WriteLine(n);
                 //if even
+                while (n != 1)
+                {
+                    n = n / 2;
+                    Console.WriteLine(n);
 
+                    answer = answer + n;
+                }
             }
             else
             {
@@ -26,5 +33,4 @@ namespace _1688.Count_of_Matches_in_Tournament
             return answer;
         }
     }
-}
 }

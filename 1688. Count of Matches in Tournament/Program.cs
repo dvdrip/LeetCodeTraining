@@ -13,6 +13,9 @@ namespace _1688.Count_of_Matches_in_Tournament
             int teams = 14;
 
             Solution solution = new Solution();
+            int matchesLeft = solution.NumberOfMatches(teams);
+            Console.WriteLine(matchesLeft);
+            Console.ReadLine();
         }
     }
 }
