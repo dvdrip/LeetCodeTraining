@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. Reverse Integer", "7. Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "412. Fizz Buzz", "412. Fizz Buzz\412. Fizz Buzz.csproj", "{9581DD9B-BEB7-4ADD-9BC1-C6800AAEDEBD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1688. Count of Matches in Tournament", "1688. Count of Matches in Tournament\1688. Count of Matches in Tournament.csproj", "{A370701B-5D80-4BA6-AF4A-2F66A51C62A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{9581DD9B-BEB7-4ADD-9BC1-C6800AAEDEBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9581DD9B-BEB7-4ADD-9BC1-C6800AAEDEBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9581DD9B-BEB7-4ADD-9BC1-C6800AAEDEBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A370701B-5D80-4BA6-AF4A-2F66A51C62A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A370701B-5D80-4BA6-AF4A-2F66A51C62A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A370701B-5D80-4BA6-AF4A-2F66A51C62A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A370701B-5D80-4BA6-AF4A-2F66A51C62A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
