@@ -45,6 +45,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1688. Count of Matches in T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "67. Add Binary", "67. Add Binary\67. Add Binary.csproj", "{3FD5342F-7BCA-47B4-83DB-1EBE4CA12ED6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "94. Binary Tree Inorder Traversal", "94. Binary Tree Inorder Traversal\94. Binary Tree Inorder Traversal.csproj", "{DE794568-CD57-4D4E-AAA7-02E0340D25AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "69. Sqrt(x)", "69. Sqrt(x)\69. Sqrt(x).csproj", "{39B12948-711D-400C-9E5D-E80572AFFAAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +139,14 @@ Global
 		{3FD5342F-7BCA-47B4-83DB-1EBE4CA12ED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FD5342F-7BCA-47B4-83DB-1EBE4CA12ED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FD5342F-7BCA-47B4-83DB-1EBE4CA12ED6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE794568-CD57-4D4E-AAA7-02E0340D25AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE794568-CD57-4D4E-AAA7-02E0340D25AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE794568-CD57-4D4E-AAA7-02E0340D25AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE794568-CD57-4D4E-AAA7-02E0340D25AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39B12948-711D-400C-9E5D-E80572AFFAAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39B12948-711D-400C-9E5D-E80572AFFAAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39B12948-711D-400C-9E5D-E80572AFFAAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39B12948-711D-400C-9E5D-E80572AFFAAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
