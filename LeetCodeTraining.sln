@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "94. Binary Tree Inorder Tra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "69. Sqrt(x)", "69. Sqrt(x)\69. Sqrt(x).csproj", "{39B12948-711D-400C-9E5D-E80572AFFAAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "136. Single Number", "136. Single Number\136. Single Number.csproj", "{BE6F3D8C-EBFA-4DD6-AEE6-717A06E377EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{39B12948-711D-400C-9E5D-E80572AFFAAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39B12948-711D-400C-9E5D-E80572AFFAAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39B12948-711D-400C-9E5D-E80572AFFAAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE6F3D8C-EBFA-4DD6-AEE6-717A06E377EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE6F3D8C-EBFA-4DD6-AEE6-717A06E377EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE6F3D8C-EBFA-4DD6-AEE6-717A06E377EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE6F3D8C-EBFA-4DD6-AEE6-717A06E377EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
